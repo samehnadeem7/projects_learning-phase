@@ -21,11 +21,12 @@
 }
 
 .background {
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(-40px) scale(5.1);
+    
 }
 
 .foreground {
-    transform: translateZ(0) scale(1);
+    transform: translateZ(-20px) scale(3);
 }
 
 .background, .foreground {
