@@ -1,3 +1,24 @@
-#sameh{
-    background-color: aqua;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    perspective: 10px;
+}
+
+#background{
+    overflow-x: hidden;
+    transform: translateZ(40);
+}
+
+#foreground,#background{
+    position: absolute;
+}
+h1{
+    
+    flex: content;
+align-self: center;
+justify-content: center;
 }
