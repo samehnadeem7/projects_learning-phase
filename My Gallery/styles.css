@@ -52,7 +52,7 @@ justify-content: space-between;
     rotate: 180deg ;
     opacity: 1;
     transform: scale(1.03);
-    transition: .5s;
+    transition: 1s;
     filter: drop-shadow(0 0 10px #333);
     
 
