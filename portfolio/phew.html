@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> </head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.ayah {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#quranint {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#quran {
+  color: #555;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#translation {
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.navbar a {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.role {
+  color: #060606;
+  font-size: larger;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro h1 {
+  color: #333;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.intro p {
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+.intro button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 1s ease 1s forwards;
+}
+
+.intro button:hover {
+  background-color: #555;
+}
+
+#card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.images {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.8;
+  filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+}
+
+.images:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.phew {
+  color: rgb(56, 54, 54);
+  margin: 20px 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+
+
+
+<body>
+    
+
+<div class="wrapper">
+    <div class="ayah">
+
+    </div>
+    
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="intro">
+        <div class="wel">
+            Welcome to My Portfolio
+
+        </div>
+        <div class="descr">
+            I am a software developer and this is my portfolio website. I am new, so I don't have many projects to showcase. Instead, I am displaying a Muslim art gallery.
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
