@@ -4,102 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-<style>
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
 
-.wrapper{
-    background-image: url(grunge-vintage-old-paper-background.jpg);
-    background-color:rgb(255, 255, 255);
-    height: 100vh;
-    width: 100vw;
-  
-    overflow-x:auto;
-}
-.ayah{
-    margin:0 auto;
-   align-items: baseline;
-    background-color:whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow-y: visible;
-    width: 95vw;
-    border-radius: 2rem;
-    margin-top: 1rem;
-    box-shadow: 3px 3px 5px 0px rgb(143, 137, 137);
-    background-image: url("new\ \(1\).jpeg");
+        body {
+            background-color: #f5f5f5;
+        }
 
-}
-#quran{
-    
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
 
-margin-top: 1rem;
-    color:rgb(56, 53, 48);
-    font-family:monospace;
-    font-style:normal; 
-    font-size:3rem;
-    font-weight:bolder;
-    
+        .ayah {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-}
-#quranint{
-font-family: 'Times New Roman', Times, serif;
-font-style: normal;
-font-weight: 900;
-font-size:2rem;
-}
-#translation{
-    color: rgb(56, 53, 53);
-    font-size: medium;
-    font-weight:bold;
-    font-size: 1.3rem;
-}
+        #quranint {
+            color: #333;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
 
-</style>
-<body>
+        #quran {
+            color: #555;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        #translation {
+            color: #777;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .navbar a {
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+ .role{
+    color: #060606;
+    font-size: larger;
+ }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h1 {
+            color: #333;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            
+           
+        }
+
+        .intro p {
+            color: #201e1e;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease 0.5s forwards;
+        }
+
+        .intro button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease 1s forwards;
+        }
+
+        .intro button:hover {
+            background-color: #555;
+        }
+
+        #card{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#card .images{
+    width:32%;
+    position:relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+ 
+  .images img{
    
+
+    width:100%;
+    height:100%;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+  }
+  .images:hover {
+   
+    opacity: 1;
+    transform: scale(1.03);
+    transition: 1s;
+    filter: drop-shadow(0 0 10px #333);
+    
+
+
+  }
+ .images:hover img{
+    filter: grayscale(0%);
+ }
+ 
+  .images{
+    position: relative;
+  }
+  .phew{
+color: rgb(56, 54, 54);
+margin: 20px 100px;
+text-align: center;
+margin-bottom: 20px;
+font-size: 3rem;
+}
+  
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
     <div class="wrapper">
-        <figure id="imgf"></figure>
-    <div class="ayah">
-    <p id="quranint">Surah Al-Mujadila, Ayah 11:<br></p>
-    <br><br>
+        <div class="ayah">
+            <p id="quranint">Surah Al-Mujadila, Ayah 11:</p>
+            <p id="quran">"يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍۢ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ"</p>
+            <p id="translation">
+                Translation:
+                "Allah will raise those who have believed among you and those who were given knowledge,
+                by degrees. And Allah is Acquainted with what you do."
+            </p>
+        </div>
 
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
 
-  <p id="quran">"يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍۢ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ"</p>
-<p id="translation">
-        
-Translation:
-"Allah will raise those who have believed among you and those who were given knowledge,
- by degrees. And Allah is Acquainted with what you do."</p>
+        <div class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a software developer and this is my portfolio website. I am new, so I don't have many projects to showcase. Instead, I am displaying a Muslim art gallery.</p>
+            <p>I am a <span class="role"></span></p>
+           
+        </div>
 
-
+        <div class="gallery">
+            <div class="container">
+                <h1 class="phew">Muslim Art Gallery</h1>
+                <div id="card">
+                    <div class="images"><img src="img (1).jpeg" alt=""></div>
+                    <div class="images"><img src="img (2).jpeg" alt=""></div>
+                    <div class="images"><img src="img (3).jpeg" alt=""></div>
+                    <div class="images"><img src="img (10).jpeg" alt=""></div>
+                    <div class="images"><img src="img (5).jpeg" alt=""></div>
+                    <div class="images"><img src="img (6).jpeg" alt=""></div>
+                    <div class="images"><img src="img (7).jpeg" alt=""></div>
+                    <div class="images"><img src="img (8).jpeg" alt=""></div>
+                    <div class="images"><img src="img (9).jpeg" alt=""></div>
+                </div>
+               
+            </div>
+        </div>
     </div>
-<div class="navbar">
-    <div class="link1"><a href=""></a></div>
-    <div class="link2"></div>
-    <div class="link3"></div>
-      
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "UI-UX Designer",
+                "Backend Developer",
+                "Coder",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
 
-
-</div>
-
-
-
-
-
+    <script>
     
-
-
-
-
-
-
-    </div>
-    
+        window.addEventListener('DOMContentLoaded', function() {
+            var introElements = document.querySelectorAll('.intro h1, .intro p, .intro button');
+            introElements.forEach(function(element, index) {
+                element.style.animationDelay = (index * 0.5) + 's';
+            });
+        });
+    </script>
 </body>
 </html>
