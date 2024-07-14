@@ -45,3 +45,60 @@ font-family: 'Times New Roman', Times, serif;
 font-style: normal;
 font-weight: 200;
 }
+.phew{
+    color: rgb(56, 54, 54);
+    margin: 20px 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    }
+    .container{
+      
+        height: 100%;
+        max-width:1200px;
+    
+        margin:0 auto;
+        padding: 20px;
+        
+    } 
+    #card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    #card .images{
+        width:32%;
+        position:relative;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+     
+      .images img{
+        rotate: 180deg ;
+    
+        width:100%;
+        height:100%;
+        opacity: 0.8;
+        filter: grayscale(100%);
+        box-shadow: 0 0 20px #333;
+        object-fit: cover;
+      }
+      .images:hover {
+        rotate: 180deg ;
+        opacity: 1;
+        transform: scale(1.03);
+        transition: 1s;
+        filter: drop-shadow(0 0 10px #333);
+        
+    
+    
+      }
+     .images:hover img{
+        filter: grayscale(0%);
+     }
+     
+      .images{
+        position: relative;
+      }
+      
