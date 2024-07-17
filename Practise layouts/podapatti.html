@@ -1,90 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    ></head>
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .wrapper{
-        height: 100vh;
-        margin: 0 auto;
-        background-color: #f5f5f5;
-    }
-    .navbar{
-       
-        display: flex;
-        flex-direction: column;
-        margin-top: 10rem;
-        width: 12rem;
-        
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    }
-    .header{
-        
-        background-color: rgb(163, 127, 255);
-    }
-    .container{
-        margin: 0 auto;
+.wrapper {
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
 
-    }
-    .navbar a{
-      
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
 
-       color: #333;
-font-size: 16px;
-font-weight: 500;
-text-decoration: none;
-padding: 10px 20px;
-border-radius: 5px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 
-    }
-    a:hover{
-        background-color: #333;
-        color: #fff;
-transform: scale(1.1); 
-transition: 0.7s;  
- }
+.navbar a {
+    color: #333;
+    font-size: 18px; /* Increased font size */
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
-    .ayah{
-        display: flex;
-        margin: 0 auto;
-        flex-direction: column;
-        flex-wrap: wrap;
-        border-radius: 4px;
-        width:fit-content;
-        align-items: center;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
 
-    }
-    #quranint {
-color: #333;
-font-size: 24px;
-font-weight: 600;
-margin-bottom: 20px;
+.ayah {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    width: fit-content;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#quranint {
+    color: #333;
+    font-size: 26px; /* Slightly increased font size */
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 #quran {
-color: #555;
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 30px;
+    color: #555;
+    font-size: 38px; /* Slightly increased font size */
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 #translation {
-color: #777;
-font-size: 18px;
-font-weight: 400;
-line-height: 1.6;
+    color: #777;
+    font-size: 20px; /* Slightly increased font size */
+    font-weight: 400;
+    line-height: 1.8; /* Slightly increased line height */
 }
+
+.ayahh{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    opacity: ;
+    animation: fadeinout 1s ease forwards;
+    
+
+}.ayahhh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.ayahh:hover{
+    color: #fff;
+
+    background-color: #333;
+}
+
+@keyframes fadeinout {
+    0%{
+opacity:0 ;
+transform: translateY(200px);
+    }
+    100{
+        opacity:1;
+        transform: translateY(10px);
+
+    }
+    
+}
+
+
+
+
+
+
+
 </style>
 
 
@@ -107,13 +148,34 @@ line-height: 1.6;
                     by degrees. And Allah is Acquainted with what you do."
                 </p>
             </div>
+            
             <div class="navbar">
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Projects</a>
                 <a href="#">Contact</a>
             </div>
-
+            <p class="ayahhh">
+                <div class="ayahh">
+                    "Read! In the name of your Lord who created - created man from a clinging substance. Read! And your Lord is the Most Generous - who taught by the pen - taught man that which he knew not." (Quran 96:1-5)
+                    </div>
+                    
+                    <div class="ayahh">
+                    "My Lord, increase me in knowledge." (Quran 20:114)
+                    </div>
+                    
+                    <div class="ayahh">
+                    "Are those who have knowledge equal to those who do not have knowledge?" (Quran 39:9)
+                    </div>
+                    
+                    <div class="ayahh">
+                    "Allah will raise those who have believed among you and those who were given knowledge, by degrees." (Quran 58:11)
+                    </div>
+                    
+                    <div class="ayahh">
+                    "And say, 'My Lord, increase me in knowledge.'" (Quran 20:114)
+                    </div>
+            </p>
 
         </div>
 

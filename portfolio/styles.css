@@ -1,185 +1,213 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #fff;
+    --bg-color: #f5f5f5;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-background-color: #f5f5f5;
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
 }
 
 .wrapper {
-max-width: 1200px;
-margin: 0 auto;
-padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
 }
 
 .ayah {
     position: relative;
-background-color: #fff;
-border-radius: 10px;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-padding: 40px;
-text-align: center;
-margin-bottom: 50px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
 }
-.refresh img{
-    position:absolute;
+
+.refresh img {
+    position: absolute;
     right: 10px;
     top: 10px;
     z-index: 11;
-   width: 1.5rem;
+    width: 1.5rem;
 }
+
 #quranint {
-color: #333;
-font-size: 24px;
-font-weight: 600;
-margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 #quran {
-color: #555;
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 #translation {
-color: #777;
-font-size: 18px;
-font-weight: 400;
-line-height: 1.6;
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 .navbar {
-display: flex;
-justify-content: center;
-margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .navbar a {
-color: #333;
-font-size: 16px;
-font-weight: 500;
-text-decoration: none;
-padding: 10px 20px;
-border-radius: 5px;
-transition: background-color 0.3s ease;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
-background-color: #333;
-color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
 }
-.role{
-color: #060606;
-font-size: larger;
+
+.navbar a:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 4px;
 }
+
+.role {
+    color: #060606;
+    font-size: larger;
+}
+
 .intro {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .intro h1 {
-color: #333;
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 20px;
-opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 1s ease forwards;
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
 }
 
 .intro p {
-color: #555;
-font-size: 18px;
-font-weight: 400;
-line-height: 1.6;
-margin-bottom: 30px;
-opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 1s ease 0.5s forwards;
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.5s forwards;
 }
 
 .intro button {
-background-color: #333;
-color: #fff;
-border: none;
-border-radius: 5px;
-padding: 12px 24px;
-font-size: 16px;
-font-weight: 500;
-cursor: pointer;
-transition: background-color 0.3s ease;
-opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 1s ease 1s forwards;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s ease 1s forwards;
 }
 
 .intro button:hover {
-background-color: #555;
+    background-color: var(--secondary-color);
 }
 
-#card{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-#card .images{
-width:32%;
-height:12rem;
-position:relative;
-margin-bottom: 20px;
-border-radius: 10px;
-overflow: hidden;
+.intro button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 4px;
 }
 
-.images img{
-
-
-width:100%;
-height:100%;
-opacity: 0.8;
-filter: grayscale(100%);
-box-shadow: 0 0 20px #333;
-object-fit: cover;
+#card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+#card .images {
+    width: 32%;
+    height: 12rem;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px var(--primary-color);
+    object-fit: cover;
+}
+
 .images:hover {
-
-opacity: 1;
-transform: scale(1.03);
-transition: 1s;
-filter: drop-shadow(0 0 10px #333);
-
-
-
-}
-.images:hover img{
-filter: grayscale(0%);
+    transform: scale(1.03);
+    transition: 1s;
+    filter: drop-shadow(0 0 10px var(--primary-color));
 }
 
-.images{
-position: relative;
-}
-.phew{
-color: rgb(56, 54, 54);
-margin: 20px 100px;
-text-align: center;
-margin-bottom: 20px;
-font-size: 3rem;
+.images:hover img {
+    filter: grayscale(0%);
 }
 
+.phew {
+    color: rgb(56, 54, 54);
+    margin: 20px 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
 
 @keyframes fadeInUp {
-0% {
-    opacity: 0;
-    transform: translateY(50px);
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-100% {
-    opacity: 1;
-    transform: translateY(0);
+
+.intro h1, .intro p, .intro button {
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
+/* chatgpt ahhh Media Query for responsiveness */
+@media (max-width: 768px) {
+    #card .images {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    #card .images {
+        width: 100%;
+    }
 }
