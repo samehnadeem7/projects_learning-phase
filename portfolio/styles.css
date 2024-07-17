@@ -15,6 +15,7 @@ padding: 50px 20px;
 }
 
 .ayah {
+    position: relative;
 background-color: #fff;
 border-radius: 10px;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -22,7 +23,13 @@ padding: 40px;
 text-align: center;
 margin-bottom: 50px;
 }
-
+.refresh img{
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 11;
+   width: 1.5rem;
+}
 #quranint {
 color: #333;
 font-size: 24px;
